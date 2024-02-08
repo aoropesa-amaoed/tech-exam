@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/36cd6fb8a5.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+    <audio src="" id="audio"></audio>
+    <div class="container">
+        <div class="music-player">
+            <div  class="img-song"></div>
+           <!-- <img src="https://upload.wikimedia.org/wikipedia/en/9/95/Eheads_anthology.jpg" class="img-song">      -->
+            <h1 class="music-name">Superproxy</h1>
+            <p class="artist-name">Eraserheads</p>
+            <div class="song-slider">
+                <span class="current-time">00:00</span>  
+                <span class="song-duration">00:00</span>
+                <input type="range" value="0" class="seek-bar">                   
+            </div>
+            <div class="controls">                
+                <i class="fa-solid fa-backward-step"></i> 
+                <button class="play-btn">
+                    <span></span>
+                    <span></span>
+                </button> 
+                <i class="fa-solid fa-forward-step "></i>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+   <script src="app.js"></script>  
+   
+</body>
+</html>
