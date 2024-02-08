@@ -10,12 +10,7 @@ const playButton = document.querySelector('.play-btn');
 const forwardButton = document.querySelector('.fa-forward-step');
 const backwardButton = document.querySelector('.fa-backward-step');
 
-// // Assuming you have defined songs somewhere
-// const songs = [
-//     { name: 'Song 1', artist: 'Artist 1', path: 'song1.mp3', cover: 'cover1.jpg' },
-//     { name: 'Song 2', artist: 'Artist 2', path: 'song2.mp3', cover: 'cover2.jpg' },
-//     // Add more songs as needed
-// ];
+
 
 const formatTime = (time) => {
     let min = Math.floor(time / 60);
@@ -97,61 +92,7 @@ setMusic(0);
 
 
 
-// let currentMusic = 0;
-// const music = document.querySelector('.music-player');
-// const songImage = document.querySelector('.img-song');
-// const seekBar = document.querySelector('.seek-bar');
-// const musicName = document.querySelector('.music-name');
-// const artistName = document.querySelector('.artist-name');
-// const currentTime = document.querySelector('.current-time');
-// const songDuration = document.querySelector('.song-duration');
-// const playButton = document.querySelector('.play-btn');
-// const forwardButton = document.querySelector('.fa-forward-step');
-// const backwardButton = document.querySelector('.fa-backward-step');
 
-
-// playButton.addEventListener('click',()=>{
-//     if(playButton.className.includes('pause')){
-//         music.play();
-//     }else{
-//         music.pause();
-//     }
-//     playButton.classList.toggle('pause');
-//     songImage.classList.toggle('play');
-// })
-
-// const setMusic =(i) =>{
-//     seekBar.value = 0; //set range slide value to 0;
-//     let song = songs[i];
-//     currentMusic = i;
-//     music.src = song.path;
-
-//     musicName.innerHTML = song.name;
-//     artistName.innerHTML = song.artist;
-//     songImage.style.backgroundImage = `url('${song.cover}')`;
-
-//     currentTime.innerHTML = '00:00'
-//     setTimeout(()=>{
-//         seekBar.max = music.songDuration;
-//         songDuration.innerHTML = formatTime(music.songDuration)
-        
-//     },300);    
-
-// }
-// setMusic(0);
-
-// const formatTime = (time) =>{
-//     let min = Math.floor(time / 60);
-//     if (min < 10){
-//         min = `0${min}`;
-        
-//     }
-//     let sec = Math.floor(time % 60);
-//     if(sec < 10){
-//         sec = `0${sec}`
-//     }
-//     return `${min} : ${sec}`;
-// }
 
 
 
